@@ -1,15 +1,15 @@
-import Nav from "./nav.js";
-import {isEmpty} from 'lodash';
+import Nav from "./nav";
+//import {isEmpty} from 'lodash';
 
-const Header = ({headerMenus}) => {
-
-    if (isEmpty(headerMenus)) {
-        return null;
-    }
+const Header = ({ headerMenus }) => {
+    // if (isEmpty(headerMenus)) {
+    //     return null;
+    // }
     return ( 
-        <Header>
-            <Nav />
-        </Header>
+        <header>
+            <Nav headerMenus={headerMenus}/>
+        </header>
+      
      );
 }
  

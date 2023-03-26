@@ -1,13 +1,14 @@
 import Header from "./header";
 
 const Layout = ({data, children}) => {
-  console.warn('menus', data);
+  console.warn('HeadermenusLayout', data);
 
     return (
-        <div>
-          <Header headerMenus = {data?.menus?.headerMenus} />
+        <>
+          <Header headerMenus = {data?.menus?.headerMenus} /> 
+
           {children}
-    </div> 
+    </> 
     );
 }
  
